@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr. Multas e Infrações (Python + Flask)</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Dr. Multas e Infrações</h1>
+    <!--<p>Rodando em Python (Flask) + abas em JavaScript</p>-->
+  </header>
+
+  <main class="container">
+    <nav class="tabs" role="tablist" aria-label="Abas do site">
+      <button class="tab active" role="tab" aria-selected="true" data-tab="home">Home</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="servicos">Serviços</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="produtos">Produtos</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="galeria">Galeria</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="faq">FAQ</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="contato">Contato</button>
+    </nav>
+
+    <section class="tabpanels">
+      <article class="panel active" role="tabpanel" id="home">
+        <h2>Home</h2>
+       <!--  <p># Bem-vinda(o)! Esta é a página inicial.</p> -->
+        <ul>
+         <!--   <li>Edite o conteúdo em <code>templates/index.html</code></li>
+          <li>Personalize o visual em <code>static/style.css</code></li>
+          <li>As abas funcionam com <code>static/tabs.js</code></li>
+          <article class="panel active" id="home"> -->
+  <h2>Home</h2>
+
+  <img src="/static/img/foto1.png" alt="Minha imagem" class="imagem">
+
+  <p># Bem-vinda(o)! Esta é a página inicial.</p> 
+</article>
+        </ul>
+      </article>
+
+      <article class="panel" role="tabpanel" id="servicos">
+        <h2>Serviços</h2>
+        <p>Descreva aqui os serviços que você oferece. Ex.: consultoria, manutenção, cursos, etc.</p>
+      </article>
+
+      <article class="panel" role="tabpanel" id="produtos">
+        <h2>Produtos</h2>
+        <p>Liste seus produtos, categorias, preços ou links para compra.</p>
+      </article>
+
+      <article class="panel" role="tabpanel" id="galeria">
+        <h2>Galeria</h2>
+        <p>Coloque fotos e exemplos do seu trabalho. (Você pode adicionar imagens na pasta <code>static/</code>.)</p>
+      </article>
+
+      <article class="panel" role="tabpanel" id="faq">
+        <h2>FAQ</h2>
+        <p>Perguntas frequentes:</p>
+        <details>
+          <summary>Qual é o horário de atendimento?</summary>
+          <p>Informe aqui seu horário.</p>
+        </details>
+        <details>
+          <summary>Como faço um orçamento?</summary>
+          <p>Explique aqui o processo.</p>
+        </details>
+      </article>
+
+      <article class="panel" role="tabpanel" id="contato">
+        <h2>Contato</h2>
+        <p>Adicione seus canais de contato:</p>
+        <ul>
+          <li>Email: <strong>seuemail@exemplo.com</strong></li>
+          <li>WhatsApp: <strong>(31) 99761-7941</strong></li>
+          <li>Instagram: <strong>@seuperfil</strong></li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <script src="/static/tabs.js"></script>
+</body>
+</html>
